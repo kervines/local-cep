@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+header h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  width: 500px;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+}
+
+.search input {
+  padding: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search button {
+  padding: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
