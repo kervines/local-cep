@@ -15,34 +15,39 @@
     <h1>Search CEP - Brazil</h1>
   </header>
   <div class="container">
-    <div class="search">
-      <input type="text" placeholder="Consultar CEP">
+
+    <form class="search">
+      <input id="input-cep" type="text" placeholder="Consultar CEP">
       <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
+    </form>
+
     <div class="result">
-      <code>
-        {
-          "cep": "01001-000",
-          <br>
-          "logradouro": "Praça da Sé",
-          <br>
-          "complemento": "lado ímpar",
-          <br>
-          "bairro": "Sé",
-          <br>
-          "localidade": "São Paulo",
-          <br>
-          "uf": "SP",
-          <br>
-          "ibge": "3550308",
-          <br>
-          "gia": "1004",
-          <br>
-          "ddd": "11",
-          <br>
-          "siafi": "7107"
-        }
-      </code>
+      <table>
+        <tr>
+          <td>CEP</td>
+          <td data-cep id="cep"></td>
+        </tr>
+        <tr>
+          <td>Logradouro</td>
+          <td data-cep id="logradouro"></td>
+        </tr>
+        <tr>
+          <td>Bairro</td>
+          <td data-cep id="bairro"></td>
+        </tr>
+        <tr>
+          <td>Localidade</td>
+          <td data-cep id="localidade"></td>
+        </tr>
+        <tr>
+          <td>UF</td>
+          <td data-cep id="uf"></td>
+        </tr>
+        <tr>
+          <td>DDD</td>
+          <td data-cep id="ddd"></td>
+        </tr>
+      </table>
     </div>
   </div>
 
