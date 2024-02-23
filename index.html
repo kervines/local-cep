@@ -11,44 +11,52 @@
 </head>
 
 <body>
-  <header>
-    <h1>cep.toLocator <i class="fa-solid fa-location-crosshairs"></i></h1>
-  </header>
   <div class="container">
-    <form class="search">
-      <input id="input-cep" type="text" placeholder="Consultar CEP">
-      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
-    <div class="result">
-      <table>
-        <tr>
-          <td><i class="fa-solid fa-map-location-dot"></i></td>
-          <td data-cep id="cep"></td>
-        </tr>
-        <tr>
-          <td><i class="fa-solid fa-road"></i></td>
-          <td data-cep id="logradouro"></td>
-        </tr>
-        <tr>
-          <td><i class="fa-solid fa-city"></i></td>
-          <td data-cep id="bairro"></td>
-        </tr>
-        <tr>
-          <td><i class="fa-solid fa-location-crosshairs"></i></td>
-          <td data-cep id="localidade"></td>
-        </tr>
-        <tr>
-          <td><i class="fa-solid fa-globe"></i></td>
-          <td data-cep id="uf"></td>
-        </tr>
-        <tr>
-          <td><i class="fa-solid fa-signal"></i></td>
-          <td data-cep id="ddd"></td>
-        </tr>
-      </table>
+    <div class="search-container">
+      <h1>Cep.toLocator <i class="fa-solid fa-location-crosshairs"></i></h1>
+      <p>Informações detalhadas sobre qualquer região, ruas a bairros, encontre tudo que precisa com rapidez e precisão.</p>
+      <form class="search">
+        <input id="input-cep" type="text" placeholder="Consultar CEP">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <div class="result">
+        <table>
+          <tr>
+            <td><i class="fa-solid fa-map-location-dot"></i></td>
+            <td data-cep id="cep"></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-road"></i></td>
+            <td data-cep id="logradouro"></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-city"></i></td>
+            <td data-cep id="bairro"></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-location-crosshairs"></i></td>
+            <td data-cep id="localidade"></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-globe"></i></td>
+            <td data-cep id="uf"></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-signal"></i></td>
+            <td data-cep id="ddd"></td>
+          </tr>
+        </table>
+      </div>
     </div>
     <img src="./assets/img/search-animate.svg" alt="">
   </div>
+  <footer>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/kervines/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="https://github.com/kervines"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://www.instagram.com/kervines.dev/"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+  </footer>
 </body>
 
 </html>
