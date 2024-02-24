@@ -11,7 +11,9 @@ const result = document.querySelector('.result ');
 // teste.then((res) => res.json()).then((data) => console.log(data));
 
 const findCep = async (cep) => {
-  const cepFetch = (await fetch(`http://viacep.com.br/ws/${cep}/json/`)).json();
+  const cepFetch = (
+    await fetch(`https://viacep.com.br/ws/${cep}/json/`)
+  ).json();
   const dataCep = await cepFetch;
   return dataCep;
 };
