@@ -24,9 +24,9 @@ Este projeto foi desenvolvido com HMTL5, CSS3 e JavaScript.
 
 ### Mobile
 
-<img src="./assets/img/img-readme/mobile.png" height="600">
-<img src="./assets/img/img-readme/mobile-sucess.png" height="600">
-<img src="./assets/img/img-readme/mobile-erro.png" height="600">
+<img src="./assets/img/img-readme/mobile.png" height="600" width="300">
+<img src="./assets/img/img-readme/mobile-sucess.png" height="600" width="300">
+<img src="./assets/img/img-readme/mobile-erro.png" height="600" width="300">
 
 ### Desktop
 
