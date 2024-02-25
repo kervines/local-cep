@@ -37,7 +37,6 @@ export default function consultaCep() {
       apiCep
         .then((dados) => {
           const erro = !!dados.erro;
-          console.log(erro);
           if (!erro) {
             dataCep.forEach((data) => {
               data.innerText = dados[data.id];
