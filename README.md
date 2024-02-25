@@ -8,6 +8,12 @@ Este projeto tem como objetivo o estudo e aplicação prática de API com JavaSc
 
 As APIs (Application Programming Interfaces) são construções disponíveis nas linguagens de programação que permitem a desenvolvedores criar funcionalidades complexas mais facilmente. Tais construções abstraem o código mais complexo, proporcionando o uso de sintaxes mais simples em seu lugar.
 
+### API ViaCEP
+
+<img src="./assets/img/img-readme/via-cep.png" height="300" width="500">
+
+👉 [Documentação ViaCEP](https://viacep.com.br/) 👈
+
 ### O Projeto
 
 Este projeto foi desenvolvido com HMTL5, CSS3 e JavaScript.
@@ -32,4 +38,4 @@ Este projeto foi desenvolvido com HMTL5, CSS3 e JavaScript.
 
 <img src="./assets/img/img-readme/desktop.png" width="800">
 
-### Referêcia: [MDN](https://developer.mozilla.org/en-US/)
+### 📚Referêcia: [MDN](https://developer.mozilla.org/en-US/)
