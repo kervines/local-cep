@@ -25,6 +25,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 2rem 0;
 }
 
 .container {
@@ -39,11 +40,12 @@ body {
 .container img {
   grid-column: 2;
   max-width: 700px;
+  min-width: 300px;
 }
 
 .search-container {
   padding: 1rem;
-  width: 400px;
+  min-width: 400px;
 }
 
 .search-container h1 i {
@@ -58,6 +60,26 @@ body {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 1rem;
+  position: relative;
+}
+
+.estados {
+  position: absolute;
+  font-size: 1rem;
+  height: 43%;
+  text-align: center;
+  border: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 20px;
+  top: 0;
+  left: 0.5rem;
+  outline: none;
+}
+.estados::-webkit-scrollbar {
+  width: 5px;
+}
+.estados::-webkit-scrollbar-thumb {
+  background-color: var(--third);
 }
 
 .search a {
@@ -77,6 +99,7 @@ body {
 }
 
 .search input:focus::-webkit-input-placeholder {
+  transition: 0.3s;
   color: transparent;
 }
 .search input:focus:-moz-placeholder {
@@ -177,4 +200,22 @@ li a i {
   .invalid p {
     font-size: 1rem;
   }
+}
+
+.search-result table {
+  width: 100%;
+}
+
+.search-result table tr {
+  display: grid;
+  grid-template-columns: 90px minmax(auto, 1fr) 1fr;
+  width: 100%;
+}
+
+.search-result table td {
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  border: 1px solid var(--primary);
+  color: var(--third);
 }
