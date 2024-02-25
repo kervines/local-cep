@@ -1,0 +1,32 @@
+const teste = fetch('https://viacep.com.br/ws/CE/fortaleza/barao/json/');
+teste.then((res) => res.json()).then((data) => console.log(data));
+
+const estados = [
+  'AC',
+  'AL',
+  'AM',
+  'AP',
+  'BA',
+  'CE',
+  'DF',
+  'ES',
+  'GO',
+  'MA',
+  'MG',
+  'MS',
+  'MT',
+  'PA',
+  'PB',
+  'PE',
+  'PI',
+  'PR',
+  'RJ',
+  'RN',
+  'RO',
+  'RR',
+  'RS',
+  'SC',
+  'SE',
+  'SP',
+  'TO',
+];

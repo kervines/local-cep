@@ -76,6 +76,19 @@ body {
   border-top-left-radius: 20px;
 }
 
+.search input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.search input:focus:-moz-placeholder {
+  color: transparent;
+}
+.search input:focus::-moz-placeholder {
+  color: transparent;
+}
+.search input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
 .search button {
   width: 100%;
   border: none;
@@ -151,7 +164,7 @@ li a i {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 560px) {
   body {
     padding: 1rem 0.5rem;
     justify-content: space-around;

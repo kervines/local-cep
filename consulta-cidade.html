@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="./assets/favicon/location-dot-solid.svg" type="image/x-icon">
   <script type="module" defer src="./js/script.js"></script>
-  <title>Local Cep | Kervines</title>
+  <title>Consulta Cidade | Kervines</title>
 </head>
 
 <body>
@@ -16,12 +16,42 @@
     <div class="search-container">
       <header class="header">
         <h1 class="title">Local CEP <i class="fa-solid fa-location-dot"></i></h1>
-        <p>Busca de cep, informações detalhadas sobre qualquer região, ruas a bairros. Encontre tudo que precisa com rapidez e precisão.</p>
+        <p>Encontre seu CEP buscando pelo nome de sua estado, cidade ou bairro.</p>
       </header>
       <form class="search">
-        <input id="input-cep" type="text" placeholder="Consultar CEP" minlength="8" maxlength="8">
+        <select class="estados" name="" id="">
+          <option value="UF">UF</option>
+          <option value="AC">AC</option>
+          <option value="AL">AL</option>
+          <option value="AM">AM</option>
+          <option value="AP">AP</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="DF">DF</option>
+          <option value="ES">ES</option>
+          <option value="GO">GO</option>
+          <option value="MA">MA</option>
+          <option value="MG">MG</option>
+          <option value="MS">MS</option>
+          <option value="MT">MT</option>
+          <option value="PA">PA</option>
+          <option value="PB">PB</option>
+          <option value="PE">PE</option>
+          <option value="PI">PI</option>
+          <option value="PR">PR</option>
+          <option value="RJ">RJ</option>
+          <option value="RN">RN</option>
+          <option value="RO">RO</option>
+          <option value="RR">RR</option>
+          <option value="RS">RS</option>
+          <option value="SC">SC</option>
+          <option value="SE">SE</option>
+          <option value="SP">SP</option>
+          <option value="TO">TO</option>
+        </select>
+        <input id="input-cep" type="text" placeholder="Cidade e logradouro">
         <button type="submit">Buscar</button>
-        <a href="#">Esqueceu seu cep?</a>
+        <a href="./index.html">Consultar cep</a>
       </form>
       <div class="result">
         <table>
