@@ -22,9 +22,11 @@ const findAddress = async (uf, city, district) => {
   const data = await fetchApi.json();
   table.innerHTML = '';
   if (data.length) {
-    data.forEach((item) => {
-      const { cep, logradouro, bairro } = item;
-      createTable(cep, logradouro, bairro);
+    data.filter((item, index) => {
+      if (index < 10) {
+        const { cep, logradouro, bairro } = item;
+        return createTable(cep, logradouro, bairro);
+      }
     });
   } else {
     table.innerHTML = '<p class="invalid">Pesquisa inválida</p>';
@@ -38,6 +40,7 @@ const createTable = (cep, street, district) => {
   <td data-cep class="street">${street}</td>
   <td data-cep class="district">${district}</td>`;
   table.appendChild(tr);
+  return tr;
 };
 
 form.addEventListener('submit', handleCity);
