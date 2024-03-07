@@ -23,10 +23,8 @@ const findAddress = async (uf, city, district) => {
   table.innerHTML = '';
   if (data.length) {
     data.filter((item, index) => {
-      if (index < 10) {
-        const { cep, logradouro, bairro } = item;
-        return createTable(cep, logradouro, bairro);
-      }
+      const { cep, logradouro, bairro } = item;
+      return createTable(cep, logradouro, bairro);
     });
   } else {
     table.innerHTML = '<p class="invalid">Pesquisa inválida</p>';
