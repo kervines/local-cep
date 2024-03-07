@@ -210,7 +210,8 @@ li a i {
 
 .search-result {
   display: none;
-  height: 520px;
+  max-height: 400px;
+  min-height: auto;
   overflow-y: scroll;
   border: 1px solid var(--primary);
 }
