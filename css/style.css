@@ -2,6 +2,7 @@
 
 :root {
   --primary: #219ebc;
+  --primary-light: #00607a;
   --second: #023047;
   --third: #ffb703;
 }
@@ -60,6 +61,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
   position: relative;
 }
 
@@ -196,10 +198,28 @@ li a i {
     flex-direction: column-reverse;
   }
 
+  .container img {
+    display: none;
+  }
+
   table [data-cep],
   .invalid p {
     font-size: 1rem;
   }
+}
+
+.search-result {
+  display: none;
+  height: 520px;
+  overflow-y: scroll;
+  border: 1px solid var(--primary);
+}
+
+.search-result::-webkit-scrollbar {
+  width: 5px;
+}
+.search-result::-webkit-scrollbar-thumb {
+  background-color: var(--third);
 }
 
 .search-result table {
@@ -216,6 +236,11 @@ li a i {
   font-weight: 500;
   font-size: 0.875rem;
   padding: 0.5rem;
-  border: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+  border-right: 1px solid var(--primary);
   color: var(--third);
+}
+
+.search-result table tr:nth-child(2n + 1) {
+  background-color: var(--primary-light);
 }

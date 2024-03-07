@@ -2,8 +2,10 @@ const input = document.querySelector('#input-cep');
 const ufs = document.querySelector('.estados');
 const form = document.querySelector('.search');
 const table = document.querySelector('.search-result table');
+const resultContainer = document.querySelector('.search-result');
 
 const handleCity = (e) => {
+  resultContainer.style.display = 'block';
   e.preventDefault();
   const { city, district } = formatAddress(input.value);
   const uf = ufs.value;
@@ -22,9 +24,9 @@ const findAddress = async (uf, city, district) => {
   const data = await fetchApi.json();
   table.innerHTML = '';
   if (data.length) {
-    data.forEach((item) => {
+    data.filter((item, index) => {
       const { cep, logradouro, bairro } = item;
-      createTable(cep, logradouro, bairro);
+      return createTable(cep, logradouro, bairro);
     });
   } else {
     table.innerHTML = '<p class="invalid">Pesquisa inválida</p>';
@@ -38,6 +40,7 @@ const createTable = (cep, street, district) => {
   <td data-cep class="street">${street}</td>
   <td data-cep class="district">${district}</td>`;
   table.appendChild(tr);
+  return tr;
 };
 
 form.addEventListener('submit', handleCity);
