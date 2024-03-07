@@ -2,8 +2,10 @@ const input = document.querySelector('#input-cep');
 const ufs = document.querySelector('.estados');
 const form = document.querySelector('.search');
 const table = document.querySelector('.search-result table');
+const resultContainer = document.querySelector('.search-result');
 
 const handleCity = (e) => {
+  resultContainer.style.display = 'block';
   e.preventDefault();
   const { city, district } = formatAddress(input.value);
   const uf = ufs.value;

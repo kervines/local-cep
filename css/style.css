@@ -209,6 +209,7 @@ li a i {
 }
 
 .search-result {
+  display: none;
   height: 520px;
   overflow-y: scroll;
   border: 1px solid var(--primary);
