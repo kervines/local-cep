@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 :root {
   --primary: #219ebc;
@@ -14,7 +14,7 @@
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -50,6 +50,11 @@ body {
   min-width: 400px;
 }
 
+.search-container h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
 .search-container h1 i {
   color: var(--third);
 }
@@ -69,7 +74,7 @@ body {
 .estados {
   position: absolute;
   font-size: 1rem;
-  height: 43%;
+  height: 40%;
   text-align: center;
   border: none;
   border-right: 1px solid rgba(0, 0, 0, 0.3);
@@ -116,9 +121,11 @@ body {
 }
 
 .search button {
+  font-family: 'Poppins', sans-serif;
   width: 100%;
   border: none;
-  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 500;
   font-size: 1.25rem;
   padding: 0.125rem 0;
   cursor: pointer;
@@ -194,8 +201,6 @@ li a i {
   body {
     padding: 2rem 0.5rem;
     justify-content: space-around;
-  }
-  .container {
   }
 
   .container img {
