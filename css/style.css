@@ -5,6 +5,39 @@
   --primary-light: #00607a;
   --second: #023047;
   --third: #ffb703;
+
+  /* enfase colors */
+  /* primary */
+  --color-p1: #894f1a;
+  --color-p2: #b66316;
+  --color-p3: #e1730d;
+  --color-p4: #ffb706;
+  --color-p5: #ffcd1d;
+  --color-p6: #ffdc2c;
+  --color-p7: #ffe97d;
+  --color-p8: #fff3b9;
+  /* secondary */
+  --color-s1: #001722;
+  --color-s2: #023047;
+  --color-s3: #0e4f70;
+  --color-s4: #22739c;
+  --color-s5: #469ac5;
+  --color-s6: #5bb5e2;
+  --color-s7: #77ccf6;
+  --color-s8: #9ddeff;
+
+  /* grays colors */
+  --g1: #222222;
+  --g2: #363636;
+  --g3: #4a4a4a;
+  --g4: #737373;
+  --g5: #878787;
+  --g6: #9c9c9c;
+  --g7: #b0b0b0;
+  --g8: #c4c4c4;
+  --g9: #d9d9d9;
+  --g10: #ededed;
+  --g11: #fafafa;
 }
 
 * {
