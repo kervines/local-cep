@@ -163,7 +163,7 @@ body {
   padding: 0.125rem 0;
   cursor: pointer;
   color: var(--second);
-  background-color: var(--third);
+  background: linear-gradient(0deg, var(--color-p3), var(--color-p6));
   border-bottom-right-radius: 20px;
 }
 
